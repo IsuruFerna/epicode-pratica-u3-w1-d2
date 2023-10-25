@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import MyNav from "./components/MyNav";
 import MyFooter from "./components/MyFooter";
 import Welcome from "./components/Welcome";
-import BookList from "./components/BookList";
+import AllTheBooks from "./components/AllTheBooks";
 
 import fantacy from "./data/fantasy.json";
 import history from "./data/history.json";
@@ -19,11 +19,11 @@ function App() {
          </header>
          <main>
             <Welcome />
-            <BookList bookGenre={fantacy} />
-            <BookList bookGenre={history} />
-            <BookList bookGenre={horror} />
-            <BookList bookGenre={romance} />
-            <BookList bookGenre={scifi} />
+            <AllTheBooks bookGenre={fantacy} />
+            <AllTheBooks bookGenre={history} />
+            <AllTheBooks bookGenre={horror} />
+            <AllTheBooks bookGenre={romance} />
+            <AllTheBooks bookGenre={scifi} />
          </main>
          <footer>
             <MyFooter />
